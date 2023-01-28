@@ -1,0 +1,103 @@
+:root {
+	--light-gray: #f8f8f8;
+	--dark-gray: #707070;
+
+	--light-blue: #1792d2;
+	--dark-blue: #143774;
+}
+
+/* General 
+========================= */
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* Typography
+--------------- */
+
+.title {
+	font-size: 2rem;
+	font-family: 'Lora', sans-serif;
+	font-weight: 400;
+	color: var(--dark-blue);
+}
+
+.subtitle {
+	font-size: .8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--light-blue);
+}
+
+/* Layout
+========================= */
+
+.container {
+	width: 90%;
+	max-width: 900px;
+	margin-inline: auto;
+}
+
+.container-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Header Section
+--------------- */
+
+#header {
+	padding-block: 3em;
+	text-align: center;
+	background: var(--light-gray);
+}
+
+.subtitle {
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+	.container-header {
+		flex-direction: column;
+	}
+}
+
+/* Nav Bar
+--------------- */
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+
+nav li {
+	margin-left: 2em;
+}
+
+nav a {
+	display: inline-block;
+	padding: .25em 0;
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--dark-gray);
+}
+
+nav a:hover {
+	color: var(--light-blue);
+}
+
+.current-page { border-bottom: 1px solid var(--dark-gray); }
+.current-page:hover { color: var(--dark-gray); }
+
+@media (max-width: 700px) {
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav li {
+		margin: .5em 0;
+	}
+}
