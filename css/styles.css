@@ -27,7 +27,12 @@ body {
 	font-size: .8rem;
 	font-weight: 700;
 	text-transform: uppercase;
+	letter-spacing: 1.55px;
 	color: var(--light-blue);
+}
+
+nav a {
+	letter-spacing: 1px;
 }
 
 /* Layout
@@ -49,7 +54,7 @@ body {
 --------------- */
 
 #header {
-	padding-block: 3em;
+	padding-block: 5em;
 	text-align: center;
 	background: var(--light-gray);
 }
