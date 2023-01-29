@@ -58,13 +58,9 @@ strong { font-weight: 700; }
 	font-weight: 700;
 	text-decoration: none;
 	letter-spacing: 2px;
-	color: var(--light-blue);
 }
 
-.article-read-more:hover {
-	color: var(--dark-blue);
-	text-decoration: underline;
-}
+.article-read-more:hover { text-decoration: underline;}
 
 /* Layout
 ========================= */
