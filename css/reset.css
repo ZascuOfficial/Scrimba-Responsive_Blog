@@ -8,6 +8,13 @@
 	box-sizing: border-box;
 }
 
+
+*::selection {
+	background-color: var(--light-blue);
+	color: #fff;
+}
+
+
 body {
 	min-height: 100%;
 }
