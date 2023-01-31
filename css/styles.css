@@ -79,7 +79,18 @@ nav a:hover { color: var(--light-blue); }
 	justify-content: space-between;
 }
 
-.container-main { margin-block: 4em; }
+.container-main {
+	margin-block: 4em;
+	align-items: baseline;
+}
+
+@media (min-width: 725px) {
+	.container-flex { flex-direction: row; }
+
+	nav { margin-block: auto; }
+	main { width: 75%; }
+	aside { width: 20%; }
+}
 
 /* Header Section
 --------------- */
@@ -90,7 +101,7 @@ nav a:hover { color: var(--light-blue); }
 	background: var(--light-gray);
 }
 
-.subtitle { margin-bottom: 1rem; }
+/* .subtitle { margin-bottom: 1rem; } */
 
 /* Nav Bar
 --------------- */
@@ -108,7 +119,7 @@ nav a {
 
 .current-page { border-bottom: 1px solid var(--dark-gray); }
 
-@media (max-width: 720px) {
+@media (max-width: 725px) {
 	nav ul {
 		flex-direction: column;
 		gap: 0;
