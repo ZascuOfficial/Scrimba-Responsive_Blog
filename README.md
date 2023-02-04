@@ -4,7 +4,7 @@ A blog page built after the design shown in the free `Responsive CSS` course on 
 
 Scrimba Course - https://youtube.com/playlist?list=PLqYFXd9GTRVWU_DqZo4D1r59ng46WdvL4
 
-Live Preview - (Not Posted Yet)
+Live Preview - https://zascuofficial-responsive-blog.netlify.app
 
 ## 💻 Technologies Used
 
