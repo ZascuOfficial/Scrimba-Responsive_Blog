@@ -80,9 +80,7 @@ nav a:hover { color: var(--light-blue); }
 	justify-content: space-between;
 }
 
-.container-main {
-	margin-block: 4em;
-}
+.container-main { margin-block: 4em; }
 
 @media (min-width: 725px) {
 	.container-flex { flex-direction: row; }
@@ -134,21 +132,33 @@ nav a {
 	border-bottom: 1px solid var(--dark-gray);
 }
 
-.article-featured .article-title { margin-top: 0; }
-.article-featured .article-read-more { margin-bottom: 0; }
-
-.article-title { margin-block: 1em; }
-.article-info { margin-top: 2em; }
-.article-body { margin-bottom: 2em; }
-
 .article-recent {
-	margin-block: 2em;
 	display: flex;
 	flex-direction: column;
+	margin-block: 2em;
 }
 
 .article-recent-main { order: 2; }
 .article-recent-secondary { order: 1; }
+
+@media (min-width: 675px) {
+	.article-info { text-align: center; }
+
+	.article-recent {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.article-recent-main { width: 65%; }
+	.article-recent-secondary { width: 30%; }
+
+	.article-image {
+		width: 100%;
+		min-height: 250px;
+		object-fit: cover;
+		object-position: center;
+	}
+}
 
 /* Aside Bar
 --------------- */
