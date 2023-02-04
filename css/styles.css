@@ -52,6 +52,7 @@ nav a:hover { color: var(--light-blue); }
 .current-page:hover { color: var(--dark-gray); }
 
 .article-title { font-size: 1.5rem; }
+.article-body { line-height: 1.5rem; }
 
 .article-info,
 .article-read-more { font-size: .875rem; }
@@ -81,7 +82,6 @@ nav a:hover { color: var(--light-blue); }
 
 .container-main {
 	margin-block: 4em;
-	align-items: baseline;
 }
 
 @media (min-width: 725px) {
@@ -100,8 +100,6 @@ nav a:hover { color: var(--light-blue); }
 	text-align: center;
 	background: var(--light-gray);
 }
-
-/* .subtitle { margin-bottom: 1rem; } */
 
 /* Nav Bar
 --------------- */
@@ -131,7 +129,26 @@ nav a {
 /* Main
 --------------- */
 
+.article-featured {
+	padding-bottom: 2em;
+	border-bottom: 1px solid var(--dark-gray);
+}
 
+.article-featured .article-title { margin-top: 0; }
+.article-featured .article-read-more { margin-bottom: 0; }
+
+.article-title { margin-block: 1em; }
+.article-info { margin-top: 2em; }
+.article-body { margin-bottom: 2em; }
+
+.article-recent {
+	margin-block: 2em;
+	display: flex;
+	flex-direction: column;
+}
+
+.article-recent-main { order: 2; }
+.article-recent-secondary { order: 1; }
 
 /* Aside Bar
 --------------- */
@@ -148,6 +165,4 @@ nav a {
 	color: var(--light-gray);
 }
 
-#footer-section h4 {
-	margin-bottom: .4em;
-}
+#footer-section h4 { margin-bottom: .4em; }
