@@ -184,7 +184,11 @@ nav a {
 	border: 1px solid var(--dark-gray);
 }
 
-.widget-title { margin-top: 0; }
+.widget-title {
+	margin-top: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
 .widget-body { margin-bottom: 0; }
 
 .widget-recent-post {
